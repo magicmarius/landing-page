@@ -1,29 +1,30 @@
+/** ====================
+=========GLOBAL=========
+========================**/
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto';
 }
 
-/** 
-            DECORATIONS         DECORATIONS         DECORATIONS
-**/
+/** ====================
+=========HEADER=========
+========================**/
+
+/*
+    HEADER typography etc
+*/
 
 header {
     background: #1F2937;
+    padding: 16px 300px;
 }
+
 
 .nav-logo,
 .hero-main-text {
     color: #F9FAF8;
-}
-
-.nav-logo {
-    font-size: 24px;
-    font-weight: 700;
-}
-
-.hero-main-text {
-    font-size: 48px;
-    font-weight: 900;
 }
 
 .nav-link,
@@ -32,59 +33,50 @@ header {
     color: #E5E7EB;
 }
 
-.nav-link {
-    text-decoration: none;
-}
-
-
-.hero-button {
-    background: #3882F6;
-    color: white;
-    font-size: 18px;
-}
-
-.hero-right {
-    background: gray;
-}
-
-.hero-image-placeholder {
-    background: gray;
-    color: lightgray;
-}
-
-
-/** 
-            SIZING      SIZING      SIZING
-**/
-
-
 .hero-main-text,
 .hero-subtext {
     width: 550px;
     margin-bottom: 16px;
 }
 
-.hero-right {
-    height: 176px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+
+.nav-logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.hero-main-text {
+    font-size: 48px;
+    font-weight: 900;
 }
 
 .hero-button {
+    background: #3882F6;
+    color: white;
+    font-size: 18px;
     padding: 8px 16px;
     border-radius: 12px;
     width: 120px;
 }
 
-
-/** 
-            LAYOUT          LAYOUT          LAYOUT
-**/
-
-header {
-    padding: 16px 300px;
+.hero-right {
+    background: gray;
 }
+
+.hero-image {
+    background: gray;
+    color: lightgray;
+}
+
+
+/*
+       HEADER layout
+*/
 
 .header-nav {
     display: flex;
@@ -98,6 +90,63 @@ header {
 }
 
 .hero-right {
+    height: 176px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-basis: 50%;
 }
+
+
+
+/** ================================
+=========INFORMATION SECTION========
+=================================**/
+
+
+/**
+    INFORMATION typography, etc.
+**/
+
+.info {
+    background: white;
+    padding: 64px 450px;
+}
+
+.info-title {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.info-card-image {
+    background: white;
+    height: 176px;
+    width: 176px;
+    border-radius: 16px;
+    border: 4px solid #0077ff;
+}
+
+.info-card-subtext {
+    font-size: 18px;
+    width: 176px;
+    color: #2e2e30;
+    margin: 8px;
+}
+
+/** 
+    INFORMATION layout
+**/
+
+.info-all-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
 
